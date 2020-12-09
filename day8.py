@@ -34,5 +34,5 @@ try:
 			first_run = False
 except:
 	#Print acc value for Part 2
-	#Error raised by out-of-bounds exception
+	#Error raised by out-of-bounds exception on loopless iteration
 	print(t)
