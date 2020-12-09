@@ -9,12 +9,12 @@ i = sep
 while True:
 	n = int(ss[i])
 	if all(n - nn not in d or n - nn == nn for nn in d):
-		print(n)
 		tar = n
 		break
 	
 	d = d[1:] + [n]
 	i += 1
+print(tar)
 
 #Part 2
 d = [*map(int,ss)]
