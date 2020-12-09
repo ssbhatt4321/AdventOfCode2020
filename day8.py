@@ -1,6 +1,6 @@
 import sys
 
-d = [l.split() for l in sys.stdin.readlines()]
+d = [l.split() for l in sys.stdin]
 first_run = True
 
 try:
