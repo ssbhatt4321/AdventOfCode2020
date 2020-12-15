@@ -17,7 +17,7 @@ def dfs(end):
 	if end not in d:
 		return 0
 	
-	vals[end] = dfs(end - 1) + dfs(end - 2) + dfs(end - 3)
+	vals[end] = sum(dfs(end - i) for i in (1,2,3))
 	return vals[end]
 
 print(dfs(d[-1]))
