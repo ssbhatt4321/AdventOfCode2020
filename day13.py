@@ -19,7 +19,7 @@ t = int(ss[0])
 ts = [(i, int(n)) for i,n in enumerate(ss[1].split(',')) if n != 'x']
 
 #Part 1
-ans = min((n - t % n,n) for _,n in ts)
+ans = min((n - t%n, n) for _, n in ts)
 print(ans[0] * ans[1])
 
 #Part 2
